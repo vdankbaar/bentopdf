@@ -1,6 +1,10 @@
 services:
   bentopdf:
-    image: ghcr.io/alam00000/bentopdf-simple:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SIMPLE_MODE: 'true'
     networks:
       nginx:
         ipv4_address: 172.22.0.80
