@@ -2177,11 +2177,6 @@ downloadBtn.addEventListener('click', async () => {
     return;
   }
 
-  if (fields.length === 0) {
-    alert(trText('Please add at least one field before downloading.'));
-    return;
-  }
-
   if (pages.length === 0) {
     alert(trText('No pages found. Please create a blank PDF or upload one.'));
     return;
